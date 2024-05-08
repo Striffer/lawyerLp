@@ -1,0 +1,21 @@
+.copy {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    overflow: hidden;
+}
+
+.copy a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.copy span {
+    color: #4EE1A0;
+}

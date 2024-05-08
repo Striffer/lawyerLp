@@ -1,0 +1,40 @@
+.menu ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    margin: 0;
+    flex-direction: column;
+    list-style: none;
+    padding: 2rem;
+    row-gap: 40px;
+    border-left: 2px solid #402B2B;
+    background-color: #ECECEC;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.menu ul li {
+    margin-top: 5vh;
+    color: #402B2B;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .menu ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 492px) {
+    .menu ul {
+        padding: 1rem;
+    }
+
+    .menu ul li {
+        margin-top: 8vh;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,177 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.imgContainer img {
+  width: 50%;
+  height: auto;
+}
+
+#about h2 {
+  color: #402B2B;
+  font-size: 40px;
+}
+
+#about p::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  width: 150px;
+  height: 3px;
+  background-color: #402B2B;
+}
+
+#about p {
+  position: relative;
+  width: 80%;
+  text-align: justify;
+  color: #402B2B;
+}
+
+#team {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #222222;
+}
+
+#team h2 {
+  width: 90%;
+  margin-left: 50px;
+  margin-bottom: 0;
+  font-size: 60px;
+}
+
+#team p {
+  width: 90%;
+  margin: 50px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.teamImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+#firstPerson,
+#seccondPerson,
+#thirdPerson {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamImg img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px 10px 0 0;
+}
+
+#firstPerson h2, #firstPerson h5, #firstPerson p,
+#seccondPerson h2, #seccondPerson h5, #seccondPerson p,
+#thirdPerson h2, #thirdPerson h5, #thirdPerson p {
+  margin: 0;
+  color: #402B2B;
+}
+
+#firstPerson h2,
+#seccondPerson h2,
+#thirdPerson h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+#firstPerson p,
+#seccondPerson p,
+#thirdPerson p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 1300px) {
+  #firstPerson,
+  #seccondPerson,
+  #thirdPerson {
+    width: 350px;
+    min-height: 400px;
+    padding: 15px;
+  }
+
+  .teamImg {
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  #team h2 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgContainer img {
+    width: 80%;
+  }
+
+  #team p {
+    margin-left: 30px;
+  }
+
+  #team p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  #firstPerson,
+  #seccondPerson,
+  #thirdPerson {
+    width: 250px;
+  }
+
+  .teamImg {
+    width: 100%;
+  }
+
+  .teamImg img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  #about h2,
+  #team h2 {
+    font-size: 28px;
+  }
+
+  #team p {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+.whatsBtn {
+    position: fixed;
+    top: 92vh;
+    right: 1vw;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+.whatsBtn::after {
+    content: "Agende uma reunião.";
+    margin-left: 2px;
+    display: none;
+    align-items: center;
+    color: #ffffff;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.whatsBtn:hover {
+    width: max-content;
+}
+
+.whatsBtn:hover::after {
+    display: flex;
+}
+
+.whatsBtn svg {
+    font-size: 30px;
+    color: #ffffff;
+}

@@ -1,0 +1,97 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 15vh;
+  overflow-x: hidden;
+}
+
+#contentContainer {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #402B2B;
+}
+
+#contentContainer .textContainer {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contentContainer h2,
+#contentContainer p {
+  color: #402B2B;
+  text-align: justify;
+}
+
+#contentContainer .imgContainer {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#firstPerson {
+  min-height: 300px;
+  background-image: url("../../assets/first_person.jpg");
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: 2px 0px 1px 1px rgba(0, 0, 0, .3);
+}
+
+#contentContainer a {
+  width: max-content;
+  display: flex;
+  padding: 20px;
+  color: #402B2B;
+  font-weight: 600;
+  border: 1px solid #402B2B;
+  transition: .3s;
+}
+
+#contentContainer a:hover {
+  color: #ECECEC;
+  background-color: #402B2B;
+}
+
+#seccondPerson {
+  min-height: 300px;
+  background-image: url("../../assets/seccond_person.jpg");
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: 2px 0px 1px 1px rgba(0, 0, 0, .3);
+}
+
+#thirdPerson {
+  min-height: 300px;
+  background-image: url("../../assets/third_person.jpg");
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: 2px 0px 1px 1px rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 1440px) {
+  #contentContainer .textContainer {
+    width: 45%;
+  }
+
+  #contentContainer .imgContainer {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #contentContainer .imgContainer {
+    display: none;
+  }
+
+  #contentContainer .textContainer {
+    width: 90%;
+  }  
+}
