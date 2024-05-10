@@ -66,8 +66,7 @@ export default function Main() {
                             <div className={`${style.slide}`}>
                                 <img src={third_img} alt="" />
                                 <h2 className={style.h23}>Enfrentando desafios no ambiente corporativo?</h2>
-                                <p className={style.p3}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut inventore temporibus deserunt minima tenetur sit, molestias, amet dolor dolorem perferendis animi incidunt quibusdam nisi. Officia recusandae omnis deserunt maiores ad.<br /><br />Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, aperiam modi ullam totam exercitationem eaque enim earum voluptate odio asperiores voluptatum consequuntur, ex nemo voluptatibus porro ratione provident, veritatis tempore?
-                                Alias dolor cupiditate doloremque. Qui, ipsam! Sapiente quas iusto hic ullam dolore a iste sequi ducimus explicabo porro architecto quia ipsum ea facilis, officiis molestiae dolor pariatur omnis! Adipisci, similique.</p>
+                                <p className={style.p3}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut inventore temporibus deserunt minima tenetur sit, molestias, amet dolor dolorem perferendis animi incidunt quibusdam nisi. Officia recusandae omnis deserunt maiores ad.<br /><br />Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, aperiam modi ullam totam exercitationem eaque enim earum voluptate odio asperiores voluptatum consequuntur, ex nemo voluptatibus porro ratione provident, veritatis tempore?</p>
                             </div>
                         </div>
 
@@ -97,17 +96,17 @@ export default function Main() {
                 </Section>
 
                 <Section heigth={"90vh"} id={style.mission}>
-                    <Card>
+                    <Card id={style.missionCard}>
                         <h2>MISSÃO</h2>
                         <p>Prevenir problemas nas relações trabalhistas através dos serviços jurídicos e consequentemente transformar as relações empresa e empregado no mais saudável possível e com menor risco de problemas empresariais, sempre pautada na ética, comprometimento, transparência e qualidade dos nossos serviços prestados.</p>
                     </Card>
 
-                    <Card>
+                    <Card id={style.missionCard}>
                         <h2>VISÃO</h2>
                         <p>Ser um escritório referência de soluções preventivas trabalhistas, empresariais e cível, buscando todas as ferramentas necessárias para a implementação do objetivo principal de prevenção, sempre com ética e transparência na resolução dos problemas jurídicos.</p>
                     </Card>
 
-                    <Card>
+                    <Card id={style.missionCard}>
                         <h2>VALORES</h2>
                         <p>Ética. Respeito. Princípios. Qualidade. Humanização. Compromisso.</p>
                     </Card>

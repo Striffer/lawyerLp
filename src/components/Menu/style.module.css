@@ -1,40 +1,65 @@
-.menu ul{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 20%;
-    margin: 0;
-    flex-direction: column;
-    list-style: none;
-    padding: 2rem;
-    row-gap: 40px;
-    border-left: 2px solid #402B2B;
+.menuOpen {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: end;
     background-color: #ECECEC;
-    overflow-x: hidden;
-    z-index: 10;
+    box-shadow: 0px 0px 0px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: .5s ease-out;
+    z-index: 9;
+    overflow: hidden;
 }
 
-.menu ul li {
-    margin-top: 5vh;
+.menuOpen ul {
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+    column-gap: 50px;
+    list-style: none;
+}
+
+.menuOpen ul li {
+    width: max-content;
+    text-align: center;
     color: #402B2B;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+    text-shadow: 1px 1px 1px #ECECEC;
+}
+
+.menuClose {
+    position: fixed;
+    display: none;
+    top: 2%;
+    right: 2px;
+    z-index: 15;
+}
+
+.menuClose svg {
+    font-size: 40px;
+    color: #402B2B;
+}
+
+@media (max-width: 1024px) {
+    .menuClose {
+        display: inherit;
+    }
 }
 
 @media (max-width: 768px) {
-    .menu ul li {
-        font-size: 18px;
+    .menuOpen ul li {
+        font-size: 12px;
     }
 }
 
-@media (max-width: 492px) {
-    .menu ul {
-        padding: 1rem;
+@media (max-width: 425px) {
+    .menuOpen ul {
+        padding: 0 auto;
+        column-gap: 20px;
     }
 
-    .menu ul li {
-        margin-top: 8vh;
-        font-size: 14px;
+    .menuOpen ul li {
+        width: auto;
+        column-gap: 20px;
     }
 }
