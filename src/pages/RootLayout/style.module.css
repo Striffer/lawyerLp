@@ -21,9 +21,3 @@
   color: #402B2B;
   z-index: 15;
 }
-
-@media (max-width: 1024px) {
-  .headerSvg {
-    display: flex;
-  }
-}
