@@ -50,6 +50,8 @@ Modelo de site para uma empresa de acessoria jurídica. Criado com intuito de es
 
 Este projeto está sob a licença do MIT. Para mais detalhes, veja o arquivo [LICENSE](LICENSE.md).
 
+## Autor ##
+
 Desenvolvido por <a href="https://github.com/Striffer" target="_blank">Pedro Lima</a>
 
 &#xa0;
