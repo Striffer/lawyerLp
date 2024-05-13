@@ -45,3 +45,13 @@ Modelo de site para uma empresa de acessoria jurídica. Criado com intuito de es
 <img src="./src/assets/screenshot4.png" alt="Portifolio" />
 
 <img src="./src/assets/screenshot5.png" alt="Portifolio" />
+
+## Licença ##
+
+Este projeto está sob a licença do MIT. Para mais detalhes, veja o arquivo [LICENSE](LICENSE.md).
+
+Desenvolvido por <a href="https://github.com/Striffer" target="_blank">Pedro Lima</a>
+
+&#xa0;
+
+<a href="#top">Voltar ao topo</a>
